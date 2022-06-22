@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+TASKITEM:
+taskitem component
+ Output   onDeletetask() eventEmitter
+
+ onDelete():
+    emit event OnDeleteTask => to parent / item component
+
+ITEM:
+Item html :
+  embed (onDeleteTask) and call deleteTask(task) method on ITEM
+
+deleteTask(task:Task): call app Service
+ deleteTask(task:Task) returning  Observable<Task> 
+ filter task with returning value to update screen ui
+
+SERVICE (App )
+ call this.http.delete<Task>(url) // this return Observable to ITEM method to update screen
+
