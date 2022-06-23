@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Doctor Appointment",
       "day": "01 July 2022 at 2:20pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "text": "Buy Laundry equipments",
       "day": "11 July 2022 at 4:00pm",
-      "reminder": false
+      "reminder": true
     }
   ]
 }
